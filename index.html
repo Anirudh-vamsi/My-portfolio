@@ -2,74 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>My Personal Portfolio</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
-<body bgcolor="#12232E">
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Anirudh Vamsi</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#profile">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Anirudh Vamsi</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section-text">
+            <h1 class="title">An Undergraduate <br> Student.</h1>
+            <p class="section-text-p1">Hi,I'm Anirudh Vamsi. A passionate student who is curious <br> to learn based in Hyderabad, Telangana.</p>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="window.open('./assets/20881A05K9-Jorige Anirudh Vamsi.pdf')"> Show Resume.</button>
+            </div><br>
+            <div class="social-container">
+                <img src="./assets/linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/anirudh-vamsi-828a88258/'">
+                <img src="./assets/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/Anirudh-vamsi'">
+            </div>
+        </div>
+        <div class="section-pic-container">
+            <img src="./assets/anirudh.png" alt="Anirudh vamsi profile picture" />
+        </div>
+    </section>
+    <section id="about">
+        <p class="section-text-p1"> Get To Know More</p>
+        <br><br><br>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section-pic-container">
+                <img src="./assets/about-pic.png" alt="About picture" class="about-pic">
+            </div>
+            <div class="text-container">
+                <p> <br><br><br>
+                    Hello Everyone! I'm Anirudh vamsi from Vardhaman College of Engineering. <br>
+                    A student who is driven by computer technology and has as his major goal to make the world better for humans. <br>
+                    A person who believes in communication and is eager to learn. <br>
+                    I'm now in my fourth year, first semester, and looking forward to graduating and continue to gain knowledge.
 
-    <h1><center>Anirudh Vamsi</center></h1>
-
-    <center><img src="anirudh.jpg" height="400" width="320"></center>
-
-    <h2>ABOUT</h2>
-
-    <p style="color: #DDAF94; font-size: 17px; text-align: center;"><b>Hello Everyone! I'm Anirudh vamsi from Vardhaman College of Engineering.A student who is driven by computer technology and has as his major goal to make the world better for humans. A person who believes in communication and is eager to learn. I'm now in my third year, first semester, and looking forward to graduating and continuing my education.</b></p>
-    
-    <h2>EDUCATION</h2>
-
-    <table>
-        <tr>
-            <th>S.NO</th>
-            <th>Institute Name</th>
-            <th>Year Of Passing</th>
-            <th>Percentage</th>
-        </tr>
-        <tr align="center">
-            <td>1.</td>
-            <td>Vardhaman College Of Engineering</td>
-            <td>2024</td>
-            <td>82.7%</td>
-        </tr>
-        <tr align="center">
-            <td>2.</td>
-            <td>Sri Amogha Junior College</td>
-            <td>2020</td>
-            <td>90.3%</td>
-        </tr>
-        <tr align="center">
-            <td>3.</td>
-            <td>Sri Sai Ram High School</td>
-            <td>2018</td>
-            <td>92.0%</td>
-        </tr>
-    </table>
-
-    <h2>SKILLS</h2>
-    <div>
-    <p style="color: #DDAF94; font-size: 17px;">
-    <i class="fa-solid fa-people-group"></i> &nbsp;&nbsp;Public Speaking <br>
-    <i class="fa-solid fa-ear-listen"></i>&nbsp;&nbsp;Active listening<br>
-    <i class="fa-solid fa-handshake"></i>&nbsp;&nbsp;Teamwork<br>
-    <i class="fa-solid fa-code"></i>&nbsp;&nbsp;Coding
-    </p>
-    </div>
-
-    <h2>HOBBIES</h2>
-
-    <ul>
-        <li>Playing Guitar</li>
-        <li>Watching Anime</li>
-        <li>Gaming</li>
-        <li>Drawing</li>
-    </ul>
-
-    <h2>CONTACT</h2>
-
-    <a href="https://mail.google.com/mail/u/1/#inbox" class="fa-solid fa-envelope" style=" text-decoration:none" aria-hidden="true">&nbsp;&nbsp;frodovamsi@gmail.com</a><br>
-    <a href="https://www.instagram.com/z_ani_tsuuu/" class="fa-brands fa-square-instagram" style="text-decoration:none" aria-hidden="true">&nbsp;&nbsp;Z_ani_tsuuu</a><br>
-    <a href="https://www.linkedin.com/in/anirudh-vamsi-828a88258/" class="fa-brands fa-linkedin" style="text-decoration:none" aria-hidden="true">&nbsp;&nbsp;Anirudh Vamsi</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section-text-p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon email-icon">
+                <p><a href="mailto:examplemail@gmail.com">frodovamsi@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/anirudh-vamsi-828a88258/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#profile">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Anirudh Vamsi. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
